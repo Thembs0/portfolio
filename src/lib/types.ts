@@ -1,5 +1,5 @@
 // ------------------------------------------------------------
-// Core project type — unchanged from before
+// Core project type - unchanged from before
 // ------------------------------------------------------------
 export type Project = {
   id: string;
@@ -20,7 +20,7 @@ export type Project = {
 };
 
 // ------------------------------------------------------------
-// Service card — used by "Technology, made useful"
+// Service card - used by "Technology, made useful"
 // The old type (title/description/items) is preserved so any
 // existing import still type-checks. Optional fields are added
 // for the DB-backed version.
@@ -85,7 +85,7 @@ export type Profile = {
 };
 
 // ------------------------------------------------------------
-// Fallback data — used if Supabase is not connected OR a query
+// Fallback data - used if Supabase is not connected OR a query
 // fails OR returns empty. This is the safety net: the homepage
 // can never render blank because of a DB hiccup.
 //

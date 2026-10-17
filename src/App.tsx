@@ -10,13 +10,21 @@ const skills = ["PHP", "Laravel", "CodeIgniter", "JavaScript", "TypeScript", "Re
 function useProjects() {
   const [projects, setProjects] = useState<Project[]>(starterProjects.filter(p => p.published));
   const [loading, setLoading] = useState(false);
+
   useEffect(() => {
     if (!hasSupabase) return;
     setLoading(true);
-    supabase.from("projects").select("*").eq("published", true).order("created_at", { ascending: false })
-      .then(({ data }) => { if (data) setProjects(data as Project[]); })
-      .finally(() => setLoading(false));
+    supabase
+      .from("projects")
+      .select("*")
+      .eq("published", true)
+      .order("created_at", { ascending: false })
+      .then(({ data }) => {
+        if (data) setProjects(data as Project[]);
+        setLoading(false);
+      });
   }, []);
+
   return { projects, loading };
 }
 

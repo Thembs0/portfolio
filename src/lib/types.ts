@@ -155,7 +155,7 @@ export const fallbackProfile: Profile = {
   role_line: "SOFTWARE & SYSTEMS",
   availability: "AVAILABLE FOR SELECT PROJECTS",
   hero_kicker: "FULL-STACK DEVELOPER · IT SPECIALIST · TECHNICAL CONSULTANT",
-  hero_heading: "I build digital things that work.",
+  hero_heading: "I build digital things work.",
   hero_intro: "I’m Thembinkosi - a developer and IT professional who brings software, systems and people together to solve real problems.",
   about_lead: "Good technology is not just about making something work. It’s about understanding the problem, making thoughtful decisions, and building something people can rely on.",
   about_body: "My work spans full-stack web development, mobile software, databases, IT support, networking and technical education. I’m comfortable moving between code, infrastructure and the people who depend on it.",
